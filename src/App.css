@@ -1,38 +1,58 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgb(213, 232, 238) 15%, rgb(255, 208, 215) 20%,rgb(234, 210, 162) );
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Head{
+  padding-top: 10px;
+  text-shadow: 5px 3px 5px aqua;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Parent{
+  height:30vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.box{
+  width: 200px;
+  height: 70px;
+  background-color: rgb(49, 121, 121);
+  border: 2px solid black;
+  margin: 30px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 450;
+  display:inline-block;
+}
+.box:hover{
+  background-color: aqua;
 }
 
-.App-link {
-  color: #61dafb;
+.togglebox{
+  width: 350px;
+  height: 270px;
+  background-color: cadetblue;
+  border-radius: 20px;
+  border: 1px solid black;  
+}
+#styling{
+  font-weight: 550;
+  color: darkolivegreen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fbox{
+  position: absolute;
+top: 200px;
+left: 300px;
+}
+.cbox{
+position: absolute;
+top: 200px;
+left: 700px;
 }
